@@ -40,7 +40,7 @@
 		<dependency>
 			<groupId>gov.nist</groupId>
 			<artifactId>hl7-v2-validation</artifactId>
-			<version>1.0.0-beta-11.8-SNAPSHOT</version>
+			<version>1.0.1</version>
 			<optional>true</optional>
 		</dependency>
 		<!-- logging -->
