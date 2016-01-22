@@ -25,6 +25,11 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	
+	<scm>
+		<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</connection>
+		<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</developerConnection>
+	</scm>
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
