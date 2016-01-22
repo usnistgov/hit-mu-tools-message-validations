@@ -16,7 +16,6 @@ public class SS_017_ACK {
 
     private static Logger logger = Logger.getLogger(SS_017_ACK.class.getName());
 
-    // prout
     public boolean assertion(hl7.v2.instance.Element e) {
         List<Element> MSH21_List = Query.query(e, "1[1].21[*]").get();
         Iterator<Element> it = MSH21_List.iterator();
