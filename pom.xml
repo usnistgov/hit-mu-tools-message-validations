@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.healthcare.mu.ss</groupId>
 	<artifactId>ss-r2-message-validation</artifactId>
-	<version>1.0.0</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>ss-r2-message-validation</name>
 	<build>
 		<pluginManagement>
