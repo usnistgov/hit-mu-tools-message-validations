@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.healthcare.mu.ss-r2</groupId>
 	<artifactId>ss-r2-message-validation</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>ss-r2-message-validation</name>
 	<build>
 		<pluginManagement>
@@ -17,7 +17,7 @@
 				</plugin>
 				<plugin>
 					<artifactId>maven-release-plugin</artifactId>
-					<version>2.0</version>
+					<version>2.5.3</version>
 					<configuration>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
 					</configuration>
@@ -29,7 +29,8 @@
 	<scm>
 		<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</connection>
 		<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</developerConnection>
-	</scm>
+	  <tag>ss-r2-message-validation-1.0.0</tag>
+  </scm>
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
