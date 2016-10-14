@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>gov.nist.healthcare.mu.edos</groupId>
-	<artifactId>eDOS-message-validation</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<groupId>gov.nist.healthcare.mu.edos-r2</groupId>
+	<artifactId>eDOS-r2-message-validation</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -36,8 +36,10 @@
 		</snapshotRepository>
 	</distributionManagement>
 	<scm>
-		<connection>scm:svn:https://svn.code.sf.net/p/mu-nist/code/trunk/eDOS-message-validation</connection>
-		<developerConnection>scm:svn:https://svn.code.sf.net/p/mu-nist/code/trunk/eDOS-message-validation</developerConnection>
+		<!-- <connection>scm:svn:https://svn.code.sf.net/p/mu-nist/code/trunk/eDOS-message-validation</connection> -->
+		<!-- <developerConnection>scm:svn:https://svn.code.sf.net/p/mu-nist/code/trunk/eDOS-message-validation</developerConnection> -->
+			<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</connection>
+			<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</developerConnection>
 	</scm>
 	<dependencies>
 		<dependency>
