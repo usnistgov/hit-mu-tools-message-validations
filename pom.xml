@@ -3,6 +3,7 @@
 	<groupId>gov.nist.healthcare.mu.edos-r2</groupId>
 	<artifactId>eDOS-r2-message-validation</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
+	
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -66,7 +67,7 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
-<!-- 	<properties> -->
-<!-- 		<core.version>1.0.50-SNAPSHOT</core.version> -->
-<!-- 	</properties> -->
+	<properties>
+	  <project.scm.id>git</project.scm.id>
+	</properties>
 </project>
