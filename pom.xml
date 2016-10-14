@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.healthcare.mu.edos-r2</groupId>
 	<artifactId>eDOS-r2-message-validation</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<build>
 		<pluginManagement>
 			<plugins>
