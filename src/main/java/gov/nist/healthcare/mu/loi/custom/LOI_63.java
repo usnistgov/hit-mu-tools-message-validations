@@ -23,7 +23,7 @@ public class LOI_63 {
     /**
      * @param e
      *        OBSERVATION_REQUEST context
-     * @return
+     * @return true if assertion verified
      */
     public boolean assertion(hl7.v2.instance.Element e) {
         List<Element> OBXList = Query.query(e, "7[*].1[1]").get();

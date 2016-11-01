@@ -20,7 +20,7 @@ public class LOI_ORL_47 {
     /**
      * @param e
      *        message context
-     * @return
+     * @return true if assertion verified
      */
     public boolean assertion(hl7.v2.instance.Element e) {
         // (RESPONSE)6[1].(PATIENT)1[1].(ORDER)2[*].(ORC)1[1].(ORC-2)2[1]

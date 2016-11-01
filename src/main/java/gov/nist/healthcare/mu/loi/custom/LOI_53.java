@@ -20,7 +20,7 @@ public class LOI_53 {
     /**
      * @param e
      *        message context
-     * @return
+     * @return true if assertion verified
      */
     public boolean assertion(hl7.v2.instance.Element e) {
         List<Element> OBR2List = Query.query(e, "5[*].3[1].1[1].2[1]").get();

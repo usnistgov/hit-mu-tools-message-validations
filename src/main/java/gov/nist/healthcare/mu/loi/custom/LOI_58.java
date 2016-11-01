@@ -11,14 +11,15 @@ public class LOI_58 {
 
     /*
      * For each PRT (Participant Information) where PRT-4.1
-     * (Participation.Identifier) is valued ‘RCT’ there must be a corresponding
-     * value in OBR-28 (Result Copies To) equal to PRT-5 (Participation Person).
+     * (Participation.Identifier) is valued ‘RCT’ there must be a
+     * corresponding value in OBR-28 (Result Copies To) equal to PRT-5
+     * (Participation Person).
      */
 
     /**
      * @param e
      *        OBSERVATION_REQUEST context
-     * @return
+     * @return true if assertion verified
      */
     public boolean assertion(hl7.v2.instance.Element e) {
         // this conformance statement only applies to "new and append order"

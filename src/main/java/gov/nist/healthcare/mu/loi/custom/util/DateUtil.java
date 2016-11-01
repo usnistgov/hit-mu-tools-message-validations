@@ -38,7 +38,9 @@ public class DateUtil {
      * Checks if two DTM can be compared.
      * 
      * @param dtm1
+     *        first dtm to compare
      * @param dtm2
+     *        second dtm to compare
      * @return true when the two DTMs have the same granularity
      */
     public static boolean canCompare(String dtm1, String dtm2) {
