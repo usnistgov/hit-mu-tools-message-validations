@@ -15,6 +15,7 @@ public class LOINC extends CodedElementFormat {
      * Check if a code is a valid LOINC
      * 
      * @param code
+     *        the code
      * @return true if code is a valid LOINC
      */
     public boolean isValid(String code) {
@@ -31,6 +32,7 @@ public class LOINC extends CodedElementFormat {
      * Mod10 algorithm for LOINC
      * 
      * @param code
+     *        the code
      * @return mod10 code
      */
     private static String mod10(String code) {
