@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file describes the dynamic data type mapping. Note:  If a an attribute (MaxLength, MinLength, Min, Max and the Table ) are defined in the mapping below, they will override the original definition in the profile -->
+<!-- V251_IG_SIF_LABORDERS_R1_D1_2013JAN V46 -->
+<DynamicDatatypeMapping>
+	<Segment Name="OBX">
+		<DynamicField DynamicField="OBX.5" FieldCarryingDefinition="OBX.2">
+			<Mapping>
+				<!-- CE (CE_LOI) -->
+				<Field Datatype="CE">
+					<Component Name="Identifier" Usage="R" Datatype="ST" MinLength="1" MaxLength="20"/>
+					<Component Name="Text" Usage="RE" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Name of Coding System" Usage="R" Datatype="ID" MinLength="1" MaxLength="20" Table="LOI_HL70396"/>
+					<Component Name="Alternate Identifier" Usage="RE" Datatype="ST" MinLength="1" MaxLength="20"/>
+					<Component Name="Alternate Text" Usage="RE" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Name of Alternate Coding System" Usage="C" PredicateTrueUsage="R" PredicateFalseUsage="X" Datatype="ID" MinLength="1" MaxLength="20" Table="LOI_HL70396">
+						<Predicate>
+							<EnglishDescription>If CE.4 (Alternate Identifier) is valued.</EnglishDescription>
+							<Condition>
+								<Valued location="./4"/>
+							</Condition>
+						</Predicate>
+					</Component>
+				</Field>
+				<!-- CWE (CWE_CR) -->
+				<Field Datatype="CWE">
+					<Component Name="Identifier" Usage="R" Datatype="ST" MinLength="1" MaxLength="20"/>
+					<Component Name="Text" Usage="RE" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Name of Coding System" Usage="R" Datatype="ID" MinLength="1" MaxLength="20" Table="LOI_HL70396"/>
+					<Component Name="Alternate Identifier" Usage="RE" Datatype="ST" MinLength="1" MaxLength="20"/>
+					<Component Name="Alternate Text" Usage="RE" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Name of Alternate Coding System" Usage="C" PredicateTrueUsage="R" PredicateFalseUsage="X" Datatype="ID" MinLength="1" MaxLength="20" Table="LOI_HL70396">
+						<Predicate>
+							<EnglishDescription>If CWE_CR.4 (Alternate Identifier) is valued.</EnglishDescription>
+							<Condition>
+								<Valued location="./4"/>
+							</Condition>
+						</Predicate>
+					</Component>
+					<Component Name="Coding System Version ID" Usage="RE" Datatype="ST" MinLength="1" MaxLength="10"/>
+					<Component Name="Alternate Coding System Version ID" Usage="C" PredicateTrueUsage="RE" PredicateFalseUsage="X" Datatype="ST" MinLength="1" MaxLength="10">
+						<Predicate>
+							<EnglishDescription>If CWE_CR.6 (Name Of Alternate Coding System) is valued.</EnglishDescription>
+							<Condition>
+								<Valued location="./6"/>
+							</Condition>
+						</Predicate>
+					</Component>	
+					<Component Name="Original Text" Usage="RE" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Second Alternate Identifier" Usage="O" Datatype="ST" MinLength="1" MaxLength="20"/>
+					<Component Name="Second Alternate Text" Usage="O" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Second Name of Alternate Coding System" Usage="O" Datatype="ID" MinLength="1" MaxLength="12" Table="0396"/>
+					<Component Name="Second Alternate Coding System Version ID" Usage="O" Datatype="ST" MinLength="1" MaxLength="10"/>
+					<Component Name="Coding System OID" Usage="O" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Value Set OID" Usage="O" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Value Set Version ID" Usage="O" Datatype="DTM" MinLength="1" MaxLength="8"/>
+					<Component Name="Alternate Coding System OID" Usage="O" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Alternate Value Set OID" Usage="O" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Alternate Value Set Version ID" Usage="O" Datatype="DTM" MinLength="1" MaxLength="8"/>
+					<Component Name="Second Alternate Coding System OID" Usage="O" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Second Alternate Value Set OID" Usage="O" Datatype="ST" MinLength="1" MaxLength="199"/>
+					<Component Name="Second Alternate Value Set Version ID" Usage="O" Datatype="DTM" MinLength="1" MaxLength="8"/>
+				</Field>
+				<!-- CX (CX_GU) -->
+				<Field Datatype="CX">
+					<Component Name="ID Number" Usage="R" Datatype="ST" MinLength="1" MaxLength="15"/>
+					<Component Name="Check Digit" Usage="O" Datatype="ST" MinLength="1" MaxLength="1"/>
+					<Component Name="Check Digit Scheme" Usage="O" Datatype="ID" MinLength="1" MaxLength="3" Table="0061"/>
+					<Component Name="Assigning Authority" Usage="R" Datatype="HD_GU" MinLength="1" MaxLength="227"/>
+					<Component Name="Identifier Type Code" Usage="R" Datatype="ID" MinLength="1" MaxLength="5" Table="LOI_0203"/>
+					<Component Name="Assigning Facility" Usage="O" Datatype="HD" MinLength="1" MaxLength="227"/>
+					<Component Name="Effective Date" Usage="O" Datatype="DT" MinLength="1" MaxLength="8"/>
+					<Component Name="Expiration Date" Usage="O" Datatype="DT" MinLength="1" MaxLength="8"/>
+					<Component Name="Assigning Jurisdiction" Usage="O" Datatype="CWE" MinLength="1" MaxLength="705"/>
+					<Component Name="Assigning Agency or Department" Usage="O" Datatype="CWE" MinLength="1" MaxLength="705"/>
+				</Field>
+				<!-- DT -->
+				<Field Datatype="DT" MaxLength="8" MinLength="4"/>
+				<!-- ED -->
+				<Field Datatype="ED">
+					<Component Name="Source Application" Usage="O" Datatype="HD" MinLength="1" MaxLength="227"/>
+					<Component Name="Type of Data" Usage="R" Datatype="ID" MinLength="1" MaxLength="9" Table="0191"/>
+					<Component Name="Data Subtype" Usage="O" Datatype="ID" MinLength="1" MaxLength="18" Table="0291"/>
+					<Component Name="Encoding" Usage="R" Datatype="ID" MinLength="1" MaxLength="6" Table="0299"/>
+					<Component Name="Data" Usage="R" Datatype="TX" MinLength="1" MaxLength="65536"/>
+				</Field>
+				<!-- FT -->
+				<Field Datatype="FT" MaxLength="65536" MinLength="1"/>
+				<!-- NM -->
+				<Field Datatype="NM" MaxLength="16" MinLength="1"/>
+				<!-- RP -->
+				<Field Datatype="RP">
+					<Component Name="Pointer" Usage="O" Datatype="ST" MinLength="1" MaxLength="15"/>
+					<Component Name="Application ID" Usage="O" Datatype="HD" MinLength="1" MaxLength="227"/>
+					<Component Name="Type of Data" Usage="O" Datatype="ID" MinLength="1" MaxLength="9" Table="0191"/>
+					<Component Name="Subtype" Usage="O" Datatype="ID" MinLength="1" MaxLength="19" Table="0291"/>
+				</Field>
+				<!-- SN (SN_LOI) -->
+				<Field Datatype="SN">
+					<Component Name="Comparator" Usage="RE" Datatype="ST" MinLength="1" MaxLength="2"/>
+					<Component Name="Num1" Usage="R" Datatype="NM" MinLength="1" MaxLength="15"/>
+					<Component Name="Separator/Suffix" Usage="C" Datatype="ST" MinLength="1" MaxLength="1">
+						<Predicate Context="SN.3" PredicateTrueUsage="RE" PredicateFalseUsage="O">
+							<EnglishDescription>If SN.2 and SN.4 are valued.</EnglishDescription>
+							<Condition>
+								<AND>
+									<Valued location="./2"/>
+									<Valued location="./4"/>
+								</AND>
+							</Condition>
+						</Predicate>
+					</Component>
+					<Component Name="Num2" Usage="RE" Datatype="NM" MinLength="1" MaxLength="15"/>
+				</Field>
+				<!-- ST -->
+				<Field Datatype="ST" MaxLength="65536" MinLength="1"/>
+				<!-- TM -->
+				<Field Datatype="TM" MaxLength="16" MinLength="2"/>
+				<!-- TS (TS_0) -->
+				<Field Datatype="TS">
+					<Component Name="Time" Usage="R" Datatype="DTM" MinLength="1" MaxLength="24">
+						<ConformanceStatement>
+							<EnglishDescription>TS_0 SHALL be precise to the year.</EnglishDescription>
+							<Assertion>
+								<Regex location="." regex="\d{4}.*"/>
+							</Assertion>	
+					</ConformanceStatement>
+					</Component>
+					<Component Name="Degree of Precision" Usage="X" Datatype="ID" MinLength="1" MaxLength="1"/>
+				</Field>
+				<!-- TX -->
+				<Field Datatype="TX" MaxLength="65536" MinLength="1"/>
+			</Mapping>
+		</DynamicField>
+	</Segment>
+</DynamicDatatypeMapping>
