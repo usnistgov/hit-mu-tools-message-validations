@@ -36,8 +36,8 @@
 		</snapshotRepository>
 	</distributionManagement>
 	<scm>
-		<connection>scm:svn:https://svn.code.sf.net/p/mu-nist/code/trunk/loi-message-validation</connection>
-		<developerConnection>scm:svn:https://svn.code.sf.net/p/mu-nist/code/trunk/loi-message-validation</developerConnection>
+			<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</connection>
+			<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</developerConnection>
 	</scm>
 	<dependencies>
 		<dependency>
@@ -69,7 +69,7 @@
 		  <version>3.4</version>		
 		  </dependency>
 	</dependencies>
-<!-- 	<properties> -->
-<!-- 		<core.version>1.0.50-SNAPSHOT</core.version> -->
-<!-- 	</properties> -->
+	<properties>
+	  <project.scm.id>git</project.scm.id>
+	</properties>
 </project>
