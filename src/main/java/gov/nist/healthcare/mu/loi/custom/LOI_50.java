@@ -16,8 +16,8 @@ public class LOI_50 {
     /**
      * @param e
      *        OBR context
-     * @return true if OBR-8 or OBR-7 is not present, true if OBR-8 => OBR-7,
-     *         false otherwise
+     * @return true if OBR-8 or OBR-7 is not present, true if OBR-8 is equal or
+     *         later than OBR-7, false otherwise
      */
     public boolean assertion(hl7.v2.instance.Element e) {
         List<Simple> OBR7List = Query.queryAsSimple(e, "7[1].1[1]").get();
