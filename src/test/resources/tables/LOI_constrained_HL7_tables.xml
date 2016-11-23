@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- V251_IG_SIF_LABORDERSF_ DSTU_R1_2013DEC -->
+<TableLibrary Description="LOI Constrained HL7 Tables – Value Sets" OrganizationName="HL7 NIST" TableLibraryVersion="1.0" Status="Active" TableLibraryIdentifier="2.16.840.1.113883.3.72.4.1.00007" Name="LOI Constrained HL7 Tables – Value Sets" xmlns="http://www.nist.gov/healthcare/data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nist.gov/healthcare/data file:///D:/sourceforge/hl7-core/core-xml-beans/src/main/xsd/TableLibrary.xsd">
+	<!-- HL7 TABLE 0065 – SPECIMEN ACTION CODE (V2.7.1) -->
+	<TableDefinition  Codesys="HL70065" Id="LOI_HL70065" Name="Specimen Action Code" Version="2.7.1" Type="HL7">
+		<TableElement Code="A" Codesys="HL70065" DisplayName="Add ordered tests to the existing specimen" Source="HL7"/>
+		<TableElement Code="G" Codesys="HL70065" DisplayName="Generated order; reflex order" Source="HL7"/>
+		<TableElement Code="L" Codesys="HL70065" DisplayName="Lab to obtain specimen from patient" Source="HL7"/>
+		<TableElement Code="O" Codesys="HL70065" DisplayName="Specimen obtained by service other than Lab" Source="HL7"/>
+		<TableElement Code="P" Codesys="HL70065" DisplayName="Pending specimen; Order sent prior to delivery" Source="HL7"/>
+		<TableElement Code="R" Codesys="HL70065" DisplayName="Revised order" Source="HL7"/>
+		<TableElement Code="S" Codesys="HL70065" DisplayName="Schedule the tests specified below" Source="HL7"/>
+	</TableDefinition>
+	<!-- HL7 TABLE 0076 – MESSAGE TYPE (V2.5.1)-->
+	<TableDefinition  Codesys="LOI_HL70076" Id="LOI_HL70076" Name="Message type" Version="2.5.1" Type="HL7">
+		<TableElement Code="ACK" Codesys="HL70076" DisplayName="General acknowledgment message" Source="HL7"/>
+		<TableElement Code="OML" Codesys="HL70076" DisplayName="Laboratory order message" Source="HL7"/>
+	</TableDefinition>
+	<!-- HL7 TABLE 0119 – ORDER CONTROL CODES (V2.5.1) -->
+	<TableDefinition Codesys="HL70119" Id="LOI_HL70119" Name="Order control codes" Version="2.5.1" Type="HL7">
+		<TableElement Code="CA" Codesys="HL70119" DisplayName="Cancel order/service request" Source="HL7"/>
+		<TableElement Code="CR" Codesys="HL70119" DisplayName="Canceled as requested" Source="HL7"/>
+		<TableElement Code="NR" Codesys="HL70119" DisplayName="Notification Received" Source="Local"/>
+		<TableElement Code="NW" Codesys="HL70119" DisplayName="New order/service" Source="HL7"/>
+		<TableElement Code="OC" Codesys="HL70119" DisplayName="Order/service canceled" Source="HL7"/>
+		<TableElement Code="OK" Codesys="HL70119" DisplayName="Order/service accepted &amp; OK" Source="HL7"/>
+		<TableElement Code="OP" Codesys="HL70119" DisplayName="Notification of order for outside dispense" Source="HL7"/>
+		<TableElement Code="UA" Codesys="HL70119" DisplayName="Unable to accept order/service" Source="HL7"/>
+		<TableElement Code="UC" Codesys="HL70119" DisplayName="Unable to cancel" Source="HL7"/>
+		<TableElement Code="UX" Codesys="HL70119" DisplayName="Unable to change" Source="HL7"/>
+		<TableElement Code="XO" Codesys="HL70119" DisplayName="Change order/service request" Source="HL7"/>
+		<TableElement Code="XR" Codesys="HL70119" DisplayName="Changed as requested" Source="HL7"/>
+	</TableDefinition>
+	<!-- HL7 TABLE 0125 – VALUE TYPE (V2.5.1) -->
+	<TableDefinition Codesys="HL70125" Id="LOI_HL70125" Name="Value type" Version="2.5.1" Type="HL7">
+		<TableElement Code="CE" Codesys="HL70125" DisplayName="Coded Entry" Source="HL7"/>
+		<TableElement Code="CWE" Codesys="HL70125" DisplayName="Coded with Exceptions" Source="HL7"/>
+		<TableElement Code="CX" Codesys="HL70125" DisplayName="Extended Composite ID With Check Digit" Source="HL7"/>
+		<TableElement Code="DT" Codesys="HL70125" DisplayName="Date" Source="HL7"/>
+		<TableElement Code="ED" Codesys="HL70125" DisplayName="Encapsulated Data" Source="HL7"/>
+		<TableElement Code="FT" Codesys="HL70125" DisplayName="Formatted Text (Display)" Source="HL7"/>
+		<TableElement Code="NM" Codesys="HL70125" DisplayName="Numeric" Source="HL7"/>
+		<TableElement Code="RP" Codesys="HL70125" DisplayName="Reference Pointer" Source="HL7"/>
+		<TableElement Code="SN" Codesys="HL70125" DisplayName="Structured Numeric" Source="HL7"/>
+		<TableElement Code="ST" Codesys="HL70125" DisplayName="String Data." Source="HL7"/>
+		<TableElement Code="TM" Codesys="HL70125" DisplayName="Time" Source="HL7"/>
+		<TableElement Code="TN" Codesys="HL70125" DisplayName="Telephone Number" Source="HL7"/>
+		<TableElement Code="TS" Codesys="HL70125" DisplayName="Time Stamp (Date &amp; Time)" Source="HL7"/>
+		<TableElement Code="TX" Codesys="HL70125" DisplayName="Text Data (Display)" Source="HL7"/>
+	</TableDefinition>
+	<!-- HL7 TABLE 0200 – NAME TYPE (V2.5.1) -->
+	<TableDefinition Codesys="HL70200" Id="LOI_HL70200" Name="NAME TYPE" Version="2.5.1" Type="HL7">
+		<TableElement Code="L" Codesys="HL70200" DisplayName="Legal Name" Source="HL7"/>
+		<TableElement Code="S" Codesys="HL70200" DisplayName="Coded Pseudo-Name to ensure anonymity" Source="HL7"/>
+		<TableElement Code="U" Codesys="HL70200" DisplayName="Unspecified" Source="HL7"/>
+		<!-- not in the guide,  added for PH profile -->
+		<TableElement Code="M" Codesys="HL70200" DisplayName="Maiden Name" Source="HL7"/>
+	</TableDefinition>
+	<!-- HL7 TABLE 0301 – UNIVERSAL ID TYPE (V2.7.1) -->
+	<TableDefinition Codesys="HL70301" Id="LOI_HL70301" Name="Universal ID type" Version="2.5.1" Type="HL7">
+		<TableElement Code="CLIA" Codesys="HL70301" DisplayName="Clinical Laboratory Improvement Amendments. Allows for the ability to designate organization identifier as a 'CLIA' assigned number (for labs)" Source="Local"/>
+		<TableElement Code="DNS" Codesys="HL70301" DisplayName="An Internet dotted name. Either in ASCII or as integers" Source="HL7"/>
+		<TableElement Code="GUID" Codesys="HL70301" DisplayName="Same as UUID." Source="HL7"/>
+		<TableElement Code="HCD" Codesys="HL70301" DisplayName="The CEN Healthcare Coding Scheme Designator. (Identifiers used in DICOM follow this assignment scheme.)" Source="HL7"/>
+		<TableElement Code="HL7" Codesys="HL70301" DisplayName="Reserved for future HL7 registration schemes" Source="HL7"/>
+		<TableElement Code="ISO" Codesys="HL70301" DisplayName="An International Standards Organization Object Identifier" Source="HL7"/>
+		<TableElement Code="L" Codesys="HL70301" DisplayName="L" Source="HL7"/>
+		<TableElement Code="M" Codesys="HL70301" DisplayName="M" Source="HL7"/>
+		<TableElement Code="N" Codesys="HL70301" DisplayName="N" Source="HL7"/>
+		<TableElement Code="Random" Codesys="HL70301" DisplayName="Usually a base64 encoded string of random bits.&lt;p>The uniqueness depends on the length of the bits. Mail systems often generate ASCII string â??unique names,&quot; from a combination of random bits and system names. Obviously, such identifiers will not be cons" Source="HL7"/>
+		<TableElement Code="URI" Codesys="HL70301" DisplayName="Uniform Resource Identifier" Source="HL7"/>
+		<TableElement Code="UUID" Codesys="HL70301" DisplayName="The DCE Universal Unique Identifier" Source="HL7"/>
+		<TableElement Code="x400" Codesys="HL70301" DisplayName="An X.400 MHS format identifier" Source="HL7"/>
+		<TableElement Code="x500" Codesys="HL70301" DisplayName="An X.500 directory name" Source="HL7"/>
+	</TableDefinition>
+	<!-- HL7 TABLE 0354 – MESSAGE STRUCTURE (V2.5.1) -->
+	<TableDefinition Codesys="HL70354" Id="LOI_HL70354" Name="Message structure" Version="2.5.1" Type="HL7">
+		<TableElement Code="ACK" Codesys="HL70354" DisplayName="General Acknowledgment Message for unsolicited transmission of an observation message" Source="HL7"/>
+		<TableElement Code="OML_O21" Codesys="HL70354" DisplayName="Unsolicited transmission of an observation message" Source="HL7"/>
+	</TableDefinition>
+</TableLibrary>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- V251_IG_SIF_LABORDERSF_ DSTU_R1_2013DEC -->
+<TableLibrary xmlns="http://www.nist.gov/healthcare/data" Description="The set of merged tables" Name="The set of merged tables" OrganizationName="HL7 NIST" Status="Active" TableLibraryIdentifier="" TableLibraryVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nist.gov/healthcare/data file:///D:/sourceforge/hl7-core/core-xml-beans/src/main/xsd/TableLibrary.xsd">
+	<TableDefinition Codesys="ICD-9CM;ICD-10CM" Id="ICD-9CM;ICD-10CM" Name="ICD-9CM;ICD-10CM" Oid="TODO" Type="External" Version="1"/>
+	<TableDefinition Codesys="SCT;HL70487" Id="SCT;HL70487" Name="SCT;HL70487" Oid="TODO" Type="External" Version="1"/>
+	<!-- HL70072 + LOI_0353 -->
+</TableLibrary>

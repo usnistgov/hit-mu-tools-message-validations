@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLibrary Description="LOI Unconstrained HL7 Tables – Value Sets" OrganizationName="HL7 NIST" TableLibraryVersion="1.0" Status="Active" TableLibraryIdentifier="2.16.840.1.113883.3.72.4.1.00007" Name="LOI Unconstrained HL7 Tables – Value Sets" xmlns="http://www.nist.gov/healthcare/data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nist.gov/healthcare/data file:///D:/sourceforge/hl7-core/core-xml-beans/src/main/xsd/TableLibrary.xsd">
+	<TableDefinition Id="HL70001" Name="Administrative Sex" Codesys="HL70001" Version="2.5.1" Type="User">
+		<TableElement Code="F" DisplayName="Female" Source="HL7"/>
+		<TableElement Code="M" DisplayName="Male" Source="HL7"/>
+		<TableElement Code="O" DisplayName="Other" Source="HL7"/>
+		<TableElement Code="U" DisplayName="Unknown" Source="HL7"/>
+		<TableElement Code="A" DisplayName="Ambiguous" Source="HL7"/>
+		<TableElement Code="N" DisplayName="Not applicable" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70004" Name="Patient Class" Codesys="HL70004" Version="2.5.1" Type="User">
+		<TableElement Code="E" DisplayName="Emergency" Source="HL7"/>
+		<TableElement Code="I" DisplayName="Inpatient" Source="HL7"/>
+		<TableElement Code="O" DisplayName="Outpatient" Source="HL7"/>
+		<TableElement Code="P" DisplayName="Preadmit" Source="HL7"/>
+		<TableElement Code="R" DisplayName="Recurring patient" Source="HL7"/>
+		<TableElement Code="B" DisplayName="Obstetrics" Source="HL7"/>
+		<TableElement Code="C" DisplayName="Commercial Account" Source="HL7"/>
+		<TableElement Code="N" DisplayName="Not Applicable" Source="HL7"/>
+		<TableElement Code="U" DisplayName="Unknown" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70005" Name="Race" Codesys="HL70005" Version="2.5.1" Type="User">
+		<TableElement Code="1002-5" Codesys="HL70005" DisplayName="American Indian or Alaska Native" Source="HL7"/>
+		<TableElement Code="2028-9" Codesys="HL70005" DisplayName="Asian" Source="HL7"/>
+		<TableElement Code="2054-5" Codesys="HL70005" DisplayName="Black or African American" Source="HL7"/>
+		<TableElement Code="2076-8" Codesys="HL70005" DisplayName="Native Hawaiian or Other Pacific Islander" Source="HL7"/>
+		<TableElement Code="2106-3" Codesys="HL70005" DisplayName="White" Source="HL7"/>
+		<TableElement Code="2131-1" Codesys="HL70005" DisplayName="Other Race" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70008" Name="Acknowledgment code" Codesys="HL70008" Version="2.5.1" Type="HL7">
+		<TableElement Code="AA" DisplayName="Original mode: Application Accept - Enhanced mode: Application acknowledgment: Accept" Source="HL7"/>
+		<TableElement Code="AE" DisplayName="Original mode: Application Error - Enhanced mode: Application acknowledgment: Error" Source="HL7"/>
+		<TableElement Code="AR" DisplayName="Original mode: Application Reject - Enhanced mode: Application acknowledgment: Reject" Source="HL7"/>
+		<TableElement Code="CA" DisplayName="Enhanced mode: Accept acknowledgment: Commit Accept" Source="HL7"/>
+		<TableElement Code="CE" DisplayName="Enhanced mode: Accept acknowledgment: Commit Error" Source="HL7"/>
+		<TableElement Code="CR" DisplayName="Enhanced mode: Accept acknowledgment: Commit Reject" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70052" Name="Diagnosis Type" Codesys="HL70052" Version="2.5.1" Type="User">
+		<TableElement Code="A" DisplayName="Admitting" Source="HL7"/>
+		<TableElement Code="W" DisplayName="Working" Source="HL7"/>
+		<TableElement Code="F" DisplayName="Final" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70063" Name="Relationship" Codesys="HL70063" Version="2.5.1" Type="User">
+		<TableElement Code="SEL" Codesys="HL70063" DisplayName="Self" Source="HL7"/>
+		<TableElement Code="SPO" Codesys="HL70063" DisplayName="Spouse" Source="HL7"/>
+		<TableElement Code="DOM" Codesys="HL70063" DisplayName="Life partner" Source="HL7"/>
+		<TableElement Code="CHD" Codesys="HL70063" DisplayName="Child" Source="HL7"/>
+		<TableElement Code="GCH" Codesys="HL70063" DisplayName="Grandchild" Source="HL7"/>
+		<TableElement Code="NCH" Codesys="HL70063" DisplayName="Natural child" Source="HL7"/>
+		<TableElement Code="SCH" Codesys="HL70063" DisplayName="Stepchild" Source="HL7"/>
+		<TableElement Code="FCH" Codesys="HL70063" DisplayName="Foster child" Source="HL7"/>
+		<TableElement Code="DEP" Codesys="HL70063" DisplayName="Handicapped dependent" Source="HL7"/>
+		<TableElement Code="WRD" Codesys="HL70063" DisplayName="Ward of court" Source="HL7"/>
+		<TableElement Code="PAR" Codesys="HL70063" DisplayName="Parent" Source="HL7"/>
+		<TableElement Code="MTH" Codesys="HL70063" DisplayName="Mother" Source="HL7"/>
+		<TableElement Code="FTH" Codesys="HL70063" DisplayName="Father" Source="HL7"/>
+		<TableElement Code="CGV" Codesys="HL70063" DisplayName="Care giver" Source="HL7"/>
+		<TableElement Code="GRD" Codesys="HL70063" DisplayName="Guardian" Source="HL7"/>
+		<TableElement Code="GRP" Codesys="HL70063" DisplayName="Grandparent" Source="HL7"/>
+		<TableElement Code="EXF" Codesys="HL70063" DisplayName="Extended family" Source="HL7"/>
+		<TableElement Code="SIB" Codesys="HL70063" DisplayName="Sibling" Source="HL7"/>
+		<TableElement Code="BRO" Codesys="HL70063" DisplayName="Brother" Source="HL7"/>
+		<TableElement Code="SIS" Codesys="HL70063" DisplayName="Sister" Source="HL7"/>
+		<TableElement Code="FND" Codesys="HL70063" DisplayName="Friend" Source="HL7"/>
+		<TableElement Code="OAD" Codesys="HL70063" DisplayName="Other adult" Source="HL7"/>
+		<TableElement Code="EME" Codesys="HL70063" DisplayName="Employee" Source="HL7"/>
+		<TableElement Code="EMR" Codesys="HL70063" DisplayName="Employer" Source="HL7"/>
+		<TableElement Code="ASC" Codesys="HL70063" DisplayName="Associate" Source="HL7"/>
+		<TableElement Code="EMC" Codesys="HL70063" DisplayName="Emergency contact" Source="HL7"/>
+		<TableElement Code="OWN" Codesys="HL70063" DisplayName="Owner" Source="HL7"/>
+		<TableElement Code="TRA" Codesys="HL70063" DisplayName="Trainer" Source="HL7"/>
+		<TableElement Code="MGR" Codesys="HL70063" DisplayName="Manager" Source="HL7"/>
+		<TableElement Code="NON" Codesys="HL70063" DisplayName="None" Source="HL7"/>
+		<TableElement Code="UNK" Codesys="HL70063" DisplayName="Unknown" Source="HL7"/>
+		<TableElement Code="OTH" Codesys="HL70063" DisplayName="Other" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70103" Name="Processing ID" Codesys="HL70103" Version="2.5.1" Type="HL7">
+		<TableElement Code="D" DisplayName="Debugging" Source="HL7"/>
+		<TableElement Code="P" DisplayName="Production" Source="HL7"/>
+		<TableElement Code="T" DisplayName="Training" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70131" Name="Contact Role" Codesys="HL70131" Version="2.5.1" Type="User">
+		<TableElement Code="E" Codesys="HL70131" DisplayName="Employer" Source="HL7"/>
+		<TableElement Code="C" Codesys="HL70131" DisplayName="Emergency Contact" Source="HL7"/>
+		<TableElement Code="F" Codesys="HL70131" DisplayName="Federal Agency" Source="HL7"/>
+		<TableElement Code="I" Codesys="HL70131" DisplayName="Insurance Company" Source="HL7"/>
+		<TableElement Code="N" Codesys="HL70131" DisplayName="Next-of-Kin" Source="HL7"/>
+		<TableElement Code="S" Codesys="HL70131" DisplayName="State Agency" Source="HL7"/>
+		<TableElement Code="O" Codesys="HL70131" DisplayName="Other" Source="HL7"/>
+		<TableElement Code="U" Codesys="HL70131" DisplayName="Unknown" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70136" Name="Yes/no indicator" Codesys="HL70136" Version="2.5.1" Type="HL7">
+		<TableElement Code="Y" DisplayName="Yes" Source="HL7"/>
+		<TableElement Code="N" DisplayName="No" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70155" Name="Accept/application acknowledgment conditions" Codesys="HL70155" Version="2.5.1" Type="HL7">
+		<TableElement Code="AL" DisplayName="Always" Source="HL7"/>
+		<TableElement Code="NE" DisplayName="Never" Source="HL7"/>
+		<TableElement Code="ER" DisplayName="Error/reject conditions only" Source="HL7"/>
+		<TableElement Code="SU" DisplayName="Successful completion only" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70189" Name="Ethnic Group" Codesys="HL70189" Version="2.5.1" Type="User">
+		<TableElement Code="H" Codesys="HL70189" DisplayName="Hispanic or Latino" Source="HL7"/>
+		<TableElement Code="N" Codesys="HL70189" DisplayName="Not Hispanic or Latino" Source="HL7"/>
+		<TableElement Code="U" Codesys="HL70189" DisplayName="Unknown" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70190" Name="Address type" Codesys="HL70190" Version="2.5.1" Type="HL7">
+		<TableElement Code="BA" DisplayName="Bad address" Source="HL7"/>
+		<TableElement Code="N" DisplayName="Birth (nee) (birth address, not otherwise specified)" Source="HL7"/>
+		<TableElement Code="BDL" DisplayName="Birth delivery location (address where birth occurred)" Source="HL7"/>
+		<TableElement Code="F" DisplayName="Country Of Origin" Source="HL7"/>
+		<TableElement Code="C" DisplayName="Current Or Temporary" Source="HL7"/>
+		<TableElement Code="B" DisplayName="Firm/Business" Source="HL7"/>
+		<TableElement Code="H" DisplayName="Home" Source="HL7"/>
+		<TableElement Code="L" DisplayName="Legal Address" Source="HL7"/>
+		<TableElement Code="M" DisplayName="Mailing" Source="HL7"/>
+		<TableElement Code="O" DisplayName="Office" Source="HL7"/>
+		<TableElement Code="P" DisplayName="Permanent" Source="HL7"/>
+		<TableElement Code="RH" DisplayName="Registry home. Refers to the information system, typically managed by a public health agency, that stores patient information such as immunization histories or cancer data, regardless of where the patient obtains services." Source="HL7"/>
+		<TableElement Code="BR" DisplayName="Residence at birth (home address at time of birth)" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70202" Name="Telecommunication equipment type" Codesys="HL70202" Version="2.5.1" Type="HL7">
+		<TableElement Code="PH" DisplayName="Telephone" Source="HL7"/>
+		<TableElement Code="FX" DisplayName="Fax" Source="HL7"/>
+		<TableElement Code="MD" DisplayName="Modem" Source="HL7"/>
+		<TableElement Code="CP" DisplayName="Cellular Phone" Source="HL7"/>
+		<TableElement Code="BP" DisplayName="Beeper" Source="HL7"/>
+		<TableElement Code="Internet" DisplayName="Internet Address: Use Only If Telecommunication Use Code Is NET" Source="HL7"/>
+		<TableElement Code="X.400" DisplayName="X.400 email address: Use Only If Telecommunication Use Code Is NET" Source="HL7"/>
+		<TableElement Code="TDD" DisplayName="Telecommunications Device for the Deaf" Source="HL7"/>
+		<TableElement Code="TTY" DisplayName="Teletypewriter" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70206" Name="Segment action code" Codesys="HL70206" Version="2.5.1" Type="HL7">
+		<TableElement Code="A" DisplayName="Add/Insert" Source="HL7"/>
+		<TableElement Code="D" DisplayName="Delete" Source="HL7"/>
+		<TableElement Code="U" DisplayName="Update" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70339" Name="Advanced Beneficiary Notice Code" Codesys="HL70339" Version="2.5.1" Type="User">
+		<TableElement Code="1" DisplayName="Service is subject to medical necessity procedures" Codesys="HL70339" Source="HL7"/>
+		<TableElement Code="2" DisplayName="Patient has been informed of responsibility, and agrees to pay for service" Codesys="HL70339"  Source="HL7"/>
+		<TableElement Code="3" DisplayName="Patient has been informed of responsibility, and asks that the payer be billed" Codesys="HL70339"  Source="HL7"/>
+		<TableElement Code="4" DisplayName="Advanced Beneficiary Notice has not been signed" Codesys="HL70339" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70353" Name="CWE statuses" Codesys="HL70353" Version="2.5.1" Type="HL7">
+		<TableElement Code="U" DisplayName="Unknown" Source="HL7"/>
+		<TableElement Code="UASK" DisplayName="Asked but Unknown" Source="HL7"/>
+		<TableElement Code="NAV" DisplayName="Not available" Source="HL7"/>
+		<TableElement Code="NA" DisplayName="Not applicable" Source="HL7"/>
+		<TableElement Code="NASK" DisplayName="Not asked" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70357" Name="Message error condition codes" Codesys="HL70357" Version="2.5.1" Type="HL7">
+		<TableElement Code="0" DisplayName="Message accepted" Source="HL7"/>
+		<TableElement Code="100" DisplayName="Segment sequence error" Source="HL7"/>
+		<TableElement Code="101" DisplayName="Required field missing" Source="HL7"/>
+		<TableElement Code="102" DisplayName="Data type error" Source="HL7"/>
+		<TableElement Code="103" DisplayName="Table value not found" Source="HL7"/>
+		<TableElement Code="200" DisplayName="Unsupported message type" Source="HL7"/>
+		<TableElement Code="201" DisplayName="Unsupported event code" Source="HL7"/>
+		<TableElement Code="202" DisplayName="Unsupported processing id" Source="HL7"/>
+		<TableElement Code="203" DisplayName="Unsupported version id" Source="HL7"/>
+		<TableElement Code="204" DisplayName="Unknown key identifier" Source="HL7"/>
+		<TableElement Code="205" DisplayName="Duplicate key identifier" Source="HL7"/>
+		<TableElement Code="206" DisplayName="Application record locked" Source="HL7"/>
+		<TableElement Code="207" DisplayName="Application internal error" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70359" Name="Diagnosis Priority" Codesys="HL70359" Version="2.5.1" Type="HL7">
+		<TableElement Code="0" DisplayName="Not included in diagnosis ranking" Source="HL7"/>
+		<TableElement Code="1" DisplayName="The primary diagnosis" Source="HL7"/>
+		<TableElement Code="2 ..." DisplayName="For ranked secondary diagnoses" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70361" Name="Application" Codesys="HL70361" Version="2.5.1" Type="User"/>
+	<TableDefinition Id="HL70362" Name="Facility" Codesys="HL70362" Version="2.5.1" Type="User"/>
+	<TableDefinition Id="HL70371" Name="Additive/Preservative" Codesys="HL70371" Version="2.5.1" Type="HL7">
+		<TableElement Code="F10" Codesys="HL70371" DisplayName="10% Formalin" Source="HL7"/>
+		<TableElement Code="C32" Codesys="HL70371" DisplayName="3.2%  Citrate" Source="HL7"/>
+		<TableElement Code="C38" Codesys="HL70371" DisplayName="3.8% Citrate" Source="HL7"/>
+		<TableElement Code="HCL6" Codesys="HL70371" DisplayName="6N HCL" Source="HL7"/>
+		<TableElement Code="ACDA" Codesys="HL70371" DisplayName="ACD Solution A" Source="HL7"/>
+		<TableElement Code="ACDB" Codesys="HL70371" DisplayName="ACD Solution B" Source="HL7"/>
+		<TableElement Code="ACET" Codesys="HL70371" DisplayName="Acetic Acid" Source="HL7"/>
+		<TableElement Code="AMIES" Codesys="HL70371" DisplayName="Amies transport medium" Source="HL7"/>
+		<TableElement Code="HEPA" Codesys="HL70371" DisplayName="Ammonium heparin" Source="HL7"/>
+		<TableElement Code="BACTM" Codesys="HL70371" DisplayName="Bacterial Transport medium" Source="HL7"/>
+		<TableElement Code="BOR" Codesys="HL70371" DisplayName="Borate Boric Acid" Source="HL7"/>
+		<TableElement Code="BOUIN" Codesys="HL70371" DisplayName="Bouin's solution" Source="HL7"/>
+		<TableElement Code="BF10" Codesys="HL70371" DisplayName="Buffered 10% formalin" Source="HL7"/>
+		<TableElement Code="WEST" Codesys="HL70371" DisplayName="Buffered Citrate (Westergren Sedimentation Rate)" Source="HL7"/>
+		<TableElement Code="BSKM" Codesys="HL70371" DisplayName="Buffered skim milk" Source="HL7"/>
+		<TableElement Code="CARS" Codesys="HL70371" DisplayName="Carson's Modified 10% formalin" Source="HL7"/>
+		<TableElement Code="CARY" Codesys="HL70371" DisplayName="Cary Blair Medium" Source="HL7"/>
+		<TableElement Code="CHLTM" Codesys="HL70371" DisplayName="Chlamydia transport medium" Source="HL7"/>
+		<TableElement Code="CTAD" Codesys="HL70371" DisplayName="CTAD (this should be spelled out if not universally understood)" Source="HL7"/>
+		<TableElement Code="ENT" Codesys="HL70371" DisplayName="Enteric bacteria transport medium" Source="HL7"/>
+		<TableElement Code="ENT+" Codesys="HL70371" DisplayName="Enteric plus" Source="HL7"/>
+		<TableElement Code="JKM" Codesys="HL70371" DisplayName="Jones Kendrick Medium" Source="HL7"/>
+		<TableElement Code="KARN" Codesys="HL70371" DisplayName="Karnovsky's fixative" Source="HL7"/>
+		<TableElement Code="LIA" Codesys="HL70371" DisplayName="Lithium iodoacetate" Source="HL7"/>
+		<TableElement Code="HEPL" Codesys="HL70371" DisplayName="Lithium/Li  Heparin" Source="HL7"/>
+		<TableElement Code="M4" Codesys="HL70371" DisplayName="M4" Source="HL7"/>
+		<TableElement Code="M4RT" Codesys="HL70371" DisplayName="M4-RT" Source="HL7"/>
+		<TableElement Code="M5" Codesys="HL70371" DisplayName="M5" Source="HL7"/>
+		<TableElement Code="MICHTM" Codesys="HL70371" DisplayName="Michel's transport medium" Source="HL7"/>
+		<TableElement Code="MMDTM" Codesys="HL70371" DisplayName="MMD transport medium" Source="HL7"/>
+		<TableElement Code="HNO3" Codesys="HL70371" DisplayName="Nitric Acid" Source="HL7"/>
+		<TableElement Code="NONE" Codesys="HL70371" DisplayName="None" Source="HL7"/>
+		<TableElement Code="PAGE" Codesys="HL70371" DisplayName="Pages's Saline" Source="HL7"/>
+		<TableElement Code="PHENOL" Codesys="HL70371" DisplayName="Phenol" Source="HL7"/>
+		<TableElement Code="KOX" Codesys="HL70371" DisplayName="Potassium Oxalate" Source="HL7"/>
+		<TableElement Code="EDTK" Codesys="HL70371" DisplayName="Potassium/K EDTA" Source="HL7"/>
+		<TableElement Code="EDTK15" Codesys="HL70371" DisplayName="Potassium/K EDTA 15%" Source="HL7"/>
+		<TableElement Code="EDTK75" Codesys="HL70371" DisplayName="Potassium/K EDTA 7.5%" Source="HL7"/>
+		<TableElement Code="PVA" Codesys="HL70371" DisplayName="PVA (polyvinylalcohol)" Source="HL7"/>
+		<TableElement Code="RLM" Codesys="HL70371" DisplayName="Reagan Lowe Medium" Source="HL7"/>
+		<TableElement Code="SST" Codesys="HL70371" DisplayName="Serum Separator Tube (Polymer Gel)" Source="HL7"/>
+		<TableElement Code="SILICA" Codesys="HL70371" DisplayName="Siliceous earth, 12 mg" Source="HL7"/>
+		<TableElement Code="NAF" Codesys="HL70371" DisplayName="Sodium Fluoride" Source="HL7"/>
+		<TableElement Code="FL100" Codesys="HL70371" DisplayName="Sodium Fluoride, 100mg" Source="HL7"/>
+		<TableElement Code="FL10" Codesys="HL70371" DisplayName="Sodium Fluoride, 10mg" Source="HL7"/>
+		<TableElement Code="NAPS" Codesys="HL70371" DisplayName="Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride" Source="HL7"/>
+		<TableElement Code="HEPN" Codesys="HL70371" DisplayName="Sodium/Na  Heparin" Source="HL7"/>
+		<TableElement Code="EDTN" Codesys="HL70371" DisplayName="Sodium/Na EDTA" Source="HL7"/>
+		<TableElement Code="SPS" Codesys="HL70371" DisplayName="SPS(this should be spelled out if not universally understood)" Source="HL7"/>
+		<TableElement Code="STUTM" Codesys="HL70371" DisplayName="Stuart transport medium" Source="HL7"/>
+		<TableElement Code="THROM" Codesys="HL70371" DisplayName="Thrombin" Source="HL7"/>
+		<TableElement Code="FDP" Codesys="HL70371" DisplayName="Thrombin NIH; soybean trypsin inhibitor (Fibrin Degradation Products)" Source="HL7"/>
+		<TableElement Code="THYMOL" Codesys="HL70371" DisplayName="Thymol" Source="HL7"/>
+		<TableElement Code="THYO" Codesys="HL70371" DisplayName="Thyoglycollate broth" Source="HL7"/>
+		<TableElement Code="TOLU" Codesys="HL70371" DisplayName="Toluene" Source="HL7"/>
+		<TableElement Code="URETM" Codesys="HL70371" DisplayName="Ureaplasma transport medium" Source="HL7"/>
+		<TableElement Code="VIRTM" Codesys="HL70371" DisplayName="Viral Transport medium" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70399" Name="Country"  Codesys="HL70399" Oid="TODO" Type="External" Version="1">
+		<TableElement Code="AFG" Codesys="ISO3166_1" DisplayName="AFGHANISTAN" Source="SDO"/>
+		<TableElement Code="ALA" Codesys="ISO3166_1" DisplayName="ÅLAND ISLANDS" Source="SDO"/>
+		<TableElement Code="ALB" Codesys="ISO3166_1" DisplayName="ALBANIA" Source="SDO"/>
+		<TableElement Code="DZA" Codesys="ISO3166_1" DisplayName="ALGERIA" Source="SDO"/>
+		<TableElement Code="ASM" Codesys="ISO3166_1" DisplayName="AMERICAN SAMOA" Source="SDO"/>
+		<TableElement Code="AND" Codesys="ISO3166_1" DisplayName="ANDORRA" Source="SDO"/>
+		<TableElement Code="AGO" Codesys="ISO3166_1" DisplayName="ANGOLA" Source="SDO"/>
+		<TableElement Code="AIA" Codesys="ISO3166_1" DisplayName="ANGUILLA" Source="SDO"/>
+		<TableElement Code="ATA" Codesys="ISO3166_1" DisplayName="ANTARCTICA" Source="SDO"/>
+		<TableElement Code="ATG" Codesys="ISO3166_1" DisplayName="ANTIGUA AND BARBUDA" Source="SDO"/>
+		<TableElement Code="ARG" Codesys="ISO3166_1" DisplayName="ARGENTINA" Source="SDO"/>
+		<TableElement Code="ARM" Codesys="ISO3166_1" DisplayName="ARMENIA" Source="SDO"/>
+		<TableElement Code="ABW" Codesys="ISO3166_1" DisplayName="ARUBA" Source="SDO"/>
+		<TableElement Code="AUS" Codesys="ISO3166_1" DisplayName="AUSTRALIA" Source="SDO"/>
+		<TableElement Code="AUT" Codesys="ISO3166_1" DisplayName="AUSTRIA" Source="SDO"/>
+		<TableElement Code="AZE" Codesys="ISO3166_1" DisplayName="AZERBAIJAN" Source="SDO"/>
+		<TableElement Code="BHS" Codesys="ISO3166_1" DisplayName="BAHAMAS" Source="SDO"/>
+		<TableElement Code="BHR" Codesys="ISO3166_1" DisplayName="BAHRAIN" Source="SDO"/>
+		<TableElement Code="BGD" Codesys="ISO3166_1" DisplayName="BANGLADESH" Source="SDO"/>
+		<TableElement Code="BRB" Codesys="ISO3166_1" DisplayName="BARBADOS" Source="SDO"/>
+		<TableElement Code="BLR" Codesys="ISO3166_1" DisplayName="BELARUS" Source="SDO"/>
+		<TableElement Code="BEL" Codesys="ISO3166_1" DisplayName="BELGIUM" Source="SDO"/>
+		<TableElement Code="BLZ" Codesys="ISO3166_1" DisplayName="BELIZE" Source="SDO"/>
+		<TableElement Code="BEN" Codesys="ISO3166_1" DisplayName="BENIN" Source="SDO"/>
+		<TableElement Code="BMU" Codesys="ISO3166_1" DisplayName="BERMUDA" Source="SDO"/>
+		<TableElement Code="BTN" Codesys="ISO3166_1" DisplayName="BHUTAN" Source="SDO"/>
+		<TableElement Code="BOL" Codesys="ISO3166_1" DisplayName="BOLIVIA" Source="SDO"/>
+		<TableElement Code="BIH" Codesys="ISO3166_1" DisplayName="BOSNIA AND HERZEGOVINA" Source="SDO"/>
+		<TableElement Code="BWA" Codesys="ISO3166_1" DisplayName="BOTSWANA" Source="SDO"/>
+		<TableElement Code="BVT" Codesys="ISO3166_1" DisplayName="BOUVET ISLAND" Source="SDO"/>
+		<TableElement Code="BRA" Codesys="ISO3166_1" DisplayName="BRAZIL" Source="SDO"/>
+		<TableElement Code="IOT" Codesys="ISO3166_1" DisplayName="BRITISH INDIAN OCEAN TERRITORY" Source="SDO"/>
+		<TableElement Code="BRN" Codesys="ISO3166_1" DisplayName="BRUNEI DARUSSALAM" Source="SDO"/>
+		<TableElement Code="BGR" Codesys="ISO3166_1" DisplayName="BULGARIA" Source="SDO"/>
+		<TableElement Code="BFA" Codesys="ISO3166_1" DisplayName="BURKINA FASO" Source="SDO"/>
+		<TableElement Code="BDI" Codesys="ISO3166_1" DisplayName="BURUNDI" Source="SDO"/>
+		<TableElement Code="KHM" Codesys="ISO3166_1" DisplayName="CAMBODIA" Source="SDO"/>
+		<TableElement Code="CMR" Codesys="ISO3166_1" DisplayName="CAMEROON" Source="SDO"/>
+		<TableElement Code="CAN" Codesys="ISO3166_1" DisplayName="CANADA" Source="SDO"/>
+		<TableElement Code="CPV" Codesys="ISO3166_1" DisplayName="CAPE VERDE" Source="SDO"/>
+		<TableElement Code="CYM" Codesys="ISO3166_1" DisplayName="CAYMAN ISLANDS" Source="SDO"/>
+		<TableElement Code="CAF" Codesys="ISO3166_1" DisplayName="CENTRAL AFRICAN REPUBLIC" Source="SDO"/>
+		<TableElement Code="TCD" Codesys="ISO3166_1" DisplayName="CHAD" Source="SDO"/>
+		<TableElement Code="CHL" Codesys="ISO3166_1" DisplayName="CHILE" Source="SDO"/>
+		<TableElement Code="CHN" Codesys="ISO3166_1" DisplayName="CHINA" Source="SDO"/>
+		<TableElement Code="CXR" Codesys="ISO3166_1" DisplayName="CHRISTMAS ISLAND" Source="SDO"/>
+		<TableElement Code="CCK" Codesys="ISO3166_1" DisplayName="COCOS (KEELING) ISLANDS" Source="SDO"/>
+		<TableElement Code="COL" Codesys="ISO3166_1" DisplayName="COLOMBIA" Source="SDO"/>
+		<TableElement Code="COM" Codesys="ISO3166_1" DisplayName="COMOROS" Source="SDO"/>
+		<TableElement Code="COG" Codesys="ISO3166_1" DisplayName="CONGO" Source="SDO"/>
+		<TableElement Code="COD" Codesys="ISO3166_1" DisplayName="CONGO, THE DEMOCRATIC REPUBLIC OF THE" Source="SDO"/>
+		<TableElement Code="COK" Codesys="ISO3166_1" DisplayName="COOK ISLANDS" Source="SDO"/>
+		<TableElement Code="CRI" Codesys="ISO3166_1" DisplayName="COSTA RICA" Source="SDO"/>
+		<TableElement Code="CIV" Codesys="ISO3166_1" DisplayName="CÔTE D'IVOIRE" Source="SDO"/>
+		<TableElement Code="HRV" Codesys="ISO3166_1" DisplayName="CROATIA" Source="SDO"/>
+		<TableElement Code="CUB" Codesys="ISO3166_1" DisplayName="CUBA" Source="SDO"/>
+		<TableElement Code="CYP" Codesys="ISO3166_1" DisplayName="CYPRUS" Source="SDO"/>
+		<TableElement Code="CZE" Codesys="ISO3166_1" DisplayName="CZECH REPUBLIC" Source="SDO"/>
+		<TableElement Code="DNK" Codesys="ISO3166_1" DisplayName="DENMARK" Source="SDO"/>
+		<TableElement Code="DJI" Codesys="ISO3166_1" DisplayName="DJIBOUTI" Source="SDO"/>
+		<TableElement Code="DMA" Codesys="ISO3166_1" DisplayName="DOMINICA" Source="SDO"/>
+		<TableElement Code="DOM" Codesys="ISO3166_1" DisplayName="DOMINICAN REPUBLIC" Source="SDO"/>
+		<TableElement Code="ECU" Codesys="ISO3166_1" DisplayName="ECUADOR" Source="SDO"/>
+		<TableElement Code="EGY" Codesys="ISO3166_1" DisplayName="EGYPT" Source="SDO"/>
+		<TableElement Code="SLV" Codesys="ISO3166_1" DisplayName="EL SALVADOR" Source="SDO"/>
+		<TableElement Code="GNQ" Codesys="ISO3166_1" DisplayName="EQUATORIAL GUINEA" Source="SDO"/>
+		<TableElement Code="ERI" Codesys="ISO3166_1" DisplayName="ERITREA" Source="SDO"/>
+		<TableElement Code="EST" Codesys="ISO3166_1" DisplayName="ESTONIA" Source="SDO"/>
+		<TableElement Code="ETH" Codesys="ISO3166_1" DisplayName="ETHIOPIA" Source="SDO"/>
+		<TableElement Code="FLK" Codesys="ISO3166_1" DisplayName="FALKLAND ISLANDS (MALVINAS)" Source="SDO"/>
+		<TableElement Code="FRO" Codesys="ISO3166_1" DisplayName="FAROE ISLANDS" Source="SDO"/>
+		<TableElement Code="FJI" Codesys="ISO3166_1" DisplayName="FIJI" Source="SDO"/>
+		<TableElement Code="FIN" Codesys="ISO3166_1" DisplayName="FINLAND" Source="SDO"/>
+		<TableElement Code="FRA" Codesys="ISO3166_1" DisplayName="FRANCE" Source="SDO"/>
+		<TableElement Code="GUF" Codesys="ISO3166_1" DisplayName="FRENCH GUIANA" Source="SDO"/>
+		<TableElement Code="PYF" Codesys="ISO3166_1" DisplayName="FRENCH POLYNESIA" Source="SDO"/>
+		<TableElement Code="ATF" Codesys="ISO3166_1" DisplayName="FRENCH SOUTHERN TERRITORIES" Source="SDO"/>
+		<TableElement Code="GAB" Codesys="ISO3166_1" DisplayName="GABON" Source="SDO"/>
+		<TableElement Code="GMB" Codesys="ISO3166_1" DisplayName="GAMBIA" Source="SDO"/>
+		<TableElement Code="GEO" Codesys="ISO3166_1" DisplayName="GEORGIA" Source="SDO"/>
+		<TableElement Code="DEU" Codesys="ISO3166_1" DisplayName="GERMANY" Source="SDO"/>
+		<TableElement Code="GHA" Codesys="ISO3166_1" DisplayName="GHANA" Source="SDO"/>
+		<TableElement Code="GIB" Codesys="ISO3166_1" DisplayName="GIBRALTAR" Source="SDO"/>
+		<TableElement Code="GRC" Codesys="ISO3166_1" DisplayName="GREECE" Source="SDO"/>
+		<TableElement Code="GRL" Codesys="ISO3166_1" DisplayName="GREENLAND" Source="SDO"/>
+		<TableElement Code="GRD" Codesys="ISO3166_1" DisplayName="GRENADA" Source="SDO"/>
+		<TableElement Code="GLP" Codesys="ISO3166_1" DisplayName="GUADELOUPE" Source="SDO"/>
+		<TableElement Code="GUM" Codesys="ISO3166_1" DisplayName="GUAM" Source="SDO"/>
+		<TableElement Code="GTM" Codesys="ISO3166_1" DisplayName="GUATEMALA" Source="SDO"/>
+		<TableElement Code="GGY" Codesys="ISO3166_1" DisplayName="GUERNSEY" Source="SDO"/>
+		<TableElement Code="GIN" Codesys="ISO3166_1" DisplayName="GUINEA" Source="SDO"/>
+		<TableElement Code="GNB" Codesys="ISO3166_1" DisplayName="GUINEA-BISSAU" Source="SDO"/>
+		<TableElement Code="GUY" Codesys="ISO3166_1" DisplayName="GUYANA" Source="SDO"/>
+		<TableElement Code="HTI" Codesys="ISO3166_1" DisplayName="HAITI" Source="SDO"/>
+		<TableElement Code="HMD" Codesys="ISO3166_1" DisplayName="HEARD ISLAND AND MCDONALD ISLANDS" Source="SDO"/>
+		<TableElement Code="VAT" Codesys="ISO3166_1" DisplayName="HOLY SEE (VATICAN CITY STATE)" Source="SDO"/>
+		<TableElement Code="HND" Codesys="ISO3166_1" DisplayName="HONDURAS" Source="SDO"/>
+		<TableElement Code="HKG" Codesys="ISO3166_1" DisplayName="HONG KONG" Source="SDO"/>
+		<TableElement Code="HUN" Codesys="ISO3166_1" DisplayName="HUNGARY" Source="SDO"/>
+		<TableElement Code="ISL" Codesys="ISO3166_1" DisplayName="ICELAND" Source="SDO"/>
+		<TableElement Code="IND" Codesys="ISO3166_1" DisplayName="INDIA" Source="SDO"/>
+		<TableElement Code="IDN" Codesys="ISO3166_1" DisplayName="INDONESIA" Source="SDO"/>
+		<TableElement Code="IRN" Codesys="ISO3166_1" DisplayName="IRAN, ISLAMIC REPUBLIC OF" Source="SDO"/>
+		<TableElement Code="IRQ" Codesys="ISO3166_1" DisplayName="IRAQ" Source="SDO"/>
+		<TableElement Code="IRL" Codesys="ISO3166_1" DisplayName="IRELAND" Source="SDO"/>
+		<TableElement Code="IMN" Codesys="ISO3166_1" DisplayName="ISLE OF MAN" Source="SDO"/>
+		<TableElement Code="ISR" Codesys="ISO3166_1" DisplayName="ISRAEL" Source="SDO"/>
+		<TableElement Code="ITA" Codesys="ISO3166_1" DisplayName="ITALY" Source="SDO"/>
+		<TableElement Code="JAM" Codesys="ISO3166_1" DisplayName="JAMAICA" Source="SDO"/>
+		<TableElement Code="JPN" Codesys="ISO3166_1" DisplayName="JAPAN" Source="SDO"/>
+		<TableElement Code="JEY" Codesys="ISO3166_1" DisplayName="JERSEY" Source="SDO"/>
+		<TableElement Code="JOR" Codesys="ISO3166_1" DisplayName="JORDAN" Source="SDO"/>
+		<TableElement Code="KAZ" Codesys="ISO3166_1" DisplayName="KAZAKHSTAN" Source="SDO"/>
+		<TableElement Code="KEN" Codesys="ISO3166_1" DisplayName="KENYA" Source="SDO"/>
+		<TableElement Code="KIR" Codesys="ISO3166_1" DisplayName="KIRIBATI" Source="SDO"/>
+		<TableElement Code="PRK" Codesys="ISO3166_1" DisplayName="KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF" Source="SDO"/>
+		<TableElement Code="KOR" Codesys="ISO3166_1" DisplayName="KOREA, REPUBLIC OF" Source="SDO"/>
+		<TableElement Code="KWT" Codesys="ISO3166_1" DisplayName="KUWAIT" Source="SDO"/>
+		<TableElement Code="KGZ" Codesys="ISO3166_1" DisplayName="KYRGYZSTAN" Source="SDO"/>
+		<TableElement Code="LAO" Codesys="ISO3166_1" DisplayName="LAO PEOPLE'S DEMOCRATIC REPUBLIC" Source="SDO"/>
+		<TableElement Code="LVA" Codesys="ISO3166_1" DisplayName="LATVIA" Source="SDO"/>
+		<TableElement Code="LBN" Codesys="ISO3166_1" DisplayName="LEBANON" Source="SDO"/>
+		<TableElement Code="LSO" Codesys="ISO3166_1" DisplayName="LESOTHO" Source="SDO"/>
+		<TableElement Code="LBR" Codesys="ISO3166_1" DisplayName="LIBERIA" Source="SDO"/>
+		<TableElement Code="LBY" Codesys="ISO3166_1" DisplayName="LIBYAN ARAB JAMAHIRIYA" Source="SDO"/>
+		<TableElement Code="LIE" Codesys="ISO3166_1" DisplayName="LIECHTENSTEIN" Source="SDO"/>
+		<TableElement Code="LTU" Codesys="ISO3166_1" DisplayName="LITHUANIA" Source="SDO"/>
+		<TableElement Code="LUX" Codesys="ISO3166_1" DisplayName="LUXEMBOURG" Source="SDO"/>
+		<TableElement Code="MAC" Codesys="ISO3166_1" DisplayName="MACAO" Source="SDO"/>
+		<TableElement Code="MKD" Codesys="ISO3166_1" DisplayName="MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF" Source="SDO"/>
+		<TableElement Code="MDG" Codesys="ISO3166_1" DisplayName="MADAGASCAR" Source="SDO"/>
+		<TableElement Code="MWI" Codesys="ISO3166_1" DisplayName="MALAWI" Source="SDO"/>
+		<TableElement Code="MYS" Codesys="ISO3166_1" DisplayName="MALAYSIA" Source="SDO"/>
+		<TableElement Code="MDV" Codesys="ISO3166_1" DisplayName="MALDIVES" Source="SDO"/>
+		<TableElement Code="MLI" Codesys="ISO3166_1" DisplayName="MALI" Source="SDO"/>
+		<TableElement Code="MLT" Codesys="ISO3166_1" DisplayName="MALTA" Source="SDO"/>
+		<TableElement Code="MHL" Codesys="ISO3166_1" DisplayName="MARSHALL ISLANDS" Source="SDO"/>
+		<TableElement Code="MTQ" Codesys="ISO3166_1" DisplayName="MARTINIQUE" Source="SDO"/>
+		<TableElement Code="MRT" Codesys="ISO3166_1" DisplayName="MAURITANIA" Source="SDO"/>
+		<TableElement Code="MUS" Codesys="ISO3166_1" DisplayName="MAURITIUS" Source="SDO"/>
+		<TableElement Code="MYT" Codesys="ISO3166_1" DisplayName="MAYOTTE" Source="SDO"/>
+		<TableElement Code="MEX" Codesys="ISO3166_1" DisplayName="MEXICO" Source="SDO"/>
+		<TableElement Code="FSM" Codesys="ISO3166_1" DisplayName="MICRONESIA, FEDERATED STATES OF" Source="SDO"/>
+		<TableElement Code="MDA" Codesys="ISO3166_1" DisplayName="MOLDOVA, REPUBLIC OF" Source="SDO"/>
+		<TableElement Code="MCO" Codesys="ISO3166_1" DisplayName="MONACO" Source="SDO"/>
+		<TableElement Code="MNG" Codesys="ISO3166_1" DisplayName="MONGOLIA" Source="SDO"/>
+		<TableElement Code="MNE" Codesys="ISO3166_1" DisplayName="MONTENEGRO" Source="SDO"/>
+		<TableElement Code="MSR" Codesys="ISO3166_1" DisplayName="MONTSERRAT" Source="SDO"/>
+		<TableElement Code="MAR" Codesys="ISO3166_1" DisplayName="MOROCCO" Source="SDO"/>
+		<TableElement Code="MOZ" Codesys="ISO3166_1" DisplayName="MOZAMBIQUE" Source="SDO"/>
+		<TableElement Code="MMR" Codesys="ISO3166_1" DisplayName="MYANMAR" Source="SDO"/>
+		<TableElement Code="NAM" Codesys="ISO3166_1" DisplayName="NAMIBIA" Source="SDO"/>
+		<TableElement Code="NRU" Codesys="ISO3166_1" DisplayName="NAURU" Source="SDO"/>
+		<TableElement Code="NPL" Codesys="ISO3166_1" DisplayName="NEPAL" Source="SDO"/>
+		<TableElement Code="NLD" Codesys="ISO3166_1" DisplayName="NETHERLANDS" Source="SDO"/>
+		<TableElement Code="ANT" Codesys="ISO3166_1" DisplayName="NETHERLANDS ANTILLES" Source="SDO"/>
+		<TableElement Code="NCL" Codesys="ISO3166_1" DisplayName="NEW CALEDONIA" Source="SDO"/>
+		<TableElement Code="NZL" Codesys="ISO3166_1" DisplayName="NEW ZEALAND" Source="SDO"/>
+		<TableElement Code="NIC" Codesys="ISO3166_1" DisplayName="NICARAGUA" Source="SDO"/>
+		<TableElement Code="NER" Codesys="ISO3166_1" DisplayName="NIGER" Source="SDO"/>
+		<TableElement Code="NGA" Codesys="ISO3166_1" DisplayName="NIGERIA" Source="SDO"/>
+		<TableElement Code="NIU" Codesys="ISO3166_1" DisplayName="NIUE" Source="SDO"/>
+		<TableElement Code="NFK" Codesys="ISO3166_1" DisplayName="NORFOLK ISLAND" Source="SDO"/>
+		<TableElement Code="MNP" Codesys="ISO3166_1" DisplayName="NORTHERN MARIANA ISLANDS" Source="SDO"/>
+		<TableElement Code="NOR" Codesys="ISO3166_1" DisplayName="NORWAY" Source="SDO"/>
+		<TableElement Code="OMN" Codesys="ISO3166_1" DisplayName="OMAN" Source="SDO"/>
+		<TableElement Code="PAK" Codesys="ISO3166_1" DisplayName="PAKISTAN" Source="SDO"/>
+		<TableElement Code="PLW" Codesys="ISO3166_1" DisplayName="PALAU" Source="SDO"/>
+		<TableElement Code="PSE" Codesys="ISO3166_1" DisplayName="PALESTINIAN TERRITORY, OCCUPIED" Source="SDO"/>
+		<TableElement Code="PAN" Codesys="ISO3166_1" DisplayName="PANAMA" Source="SDO"/>
+		<TableElement Code="PNG" Codesys="ISO3166_1" DisplayName="PAPUA NEW GUINEA" Source="SDO"/>
+		<TableElement Code="PRY" Codesys="ISO3166_1" DisplayName="PARAGUAY" Source="SDO"/>
+		<TableElement Code="PER" Codesys="ISO3166_1" DisplayName="PERU" Source="SDO"/>
+		<TableElement Code="PHL" Codesys="ISO3166_1" DisplayName="PHILIPPINES" Source="SDO"/>
+		<TableElement Code="PCN" Codesys="ISO3166_1" DisplayName="PITCAIRN" Source="SDO"/>
+		<TableElement Code="POL" Codesys="ISO3166_1" DisplayName="POLAND" Source="SDO"/>
+		<TableElement Code="PRT" Codesys="ISO3166_1" DisplayName="PORTUGAL" Source="SDO"/>
+		<TableElement Code="PRI" Codesys="ISO3166_1" DisplayName="PUERTO RICO" Source="SDO"/>
+		<TableElement Code="QAT" Codesys="ISO3166_1" DisplayName="QATAR" Source="SDO"/>
+		<TableElement Code="REU" Codesys="ISO3166_1" DisplayName="RÉUNION" Source="SDO"/>
+		<TableElement Code="ROU" Codesys="ISO3166_1" DisplayName="ROMANIA" Source="SDO"/>
+		<TableElement Code="RUS" Codesys="ISO3166_1" DisplayName="RUSSIAN FEDERATION" Source="SDO"/>
+		<TableElement Code="RWA" Codesys="ISO3166_1" DisplayName="RWANDA" Source="SDO"/>
+		<TableElement Code="BLM" Codesys="ISO3166_1" DisplayName="SAINT BARTHÉLEMY" Source="SDO"/>
+		<TableElement Code="SHN" Codesys="ISO3166_1" DisplayName="SAINT HELENA" Source="SDO"/>
+		<TableElement Code="KNA" Codesys="ISO3166_1" DisplayName="SAINT KITTS AND NEVIS" Source="SDO"/>
+		<TableElement Code="LCA" Codesys="ISO3166_1" DisplayName="SAINT LUCIA" Source="SDO"/>
+		<TableElement Code="MAF" Codesys="ISO3166_1" DisplayName="SAINT MARTIN (FRENCH PART)" Source="SDO"/>
+		<TableElement Code="SPM" Codesys="ISO3166_1" DisplayName="SAINT PIERRE AND MIQUELON" Source="SDO"/>
+		<TableElement Code="VCT" Codesys="ISO3166_1" DisplayName="SAINT VINCENT AND THE GRENADINES" Source="SDO"/>
+		<TableElement Code="WSM" Codesys="ISO3166_1" DisplayName="SAMOA" Source="SDO"/>
+		<TableElement Code="SMR" Codesys="ISO3166_1" DisplayName="SAN MARINO" Source="SDO"/>
+		<TableElement Code="STP" Codesys="ISO3166_1" DisplayName="SAO TOME AND PRINCIPE" Source="SDO"/>
+		<TableElement Code="SAU" Codesys="ISO3166_1" DisplayName="SAUDI ARABIA" Source="SDO"/>
+		<TableElement Code="SEN" Codesys="ISO3166_1" DisplayName="SENEGAL" Source="SDO"/>
+		<TableElement Code="SRB" Codesys="ISO3166_1" DisplayName="SERBIA" Source="SDO"/>
+		<TableElement Code="SYC" Codesys="ISO3166_1" DisplayName="SEYCHELLES" Source="SDO"/>
+		<TableElement Code="SLE" Codesys="ISO3166_1" DisplayName="SIERRA LEONE" Source="SDO"/>
+		<TableElement Code="SGP" Codesys="ISO3166_1" DisplayName="SINGAPORE" Source="SDO"/>
+		<TableElement Code="SVK" Codesys="ISO3166_1" DisplayName="SLOVAKIA" Source="SDO"/>
+		<TableElement Code="SVN" Codesys="ISO3166_1" DisplayName="SLOVENIA" Source="SDO"/>
+		<TableElement Code="SLB" Codesys="ISO3166_1" DisplayName="SOLOMON ISLANDS" Source="SDO"/>
+		<TableElement Code="SOM" Codesys="ISO3166_1" DisplayName="SOMALIA" Source="SDO"/>
+		<TableElement Code="ZAF" Codesys="ISO3166_1" DisplayName="SOUTH AFRICA" Source="SDO"/>
+		<TableElement Code="SGS" Codesys="ISO3166_1" DisplayName="SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS" Source="SDO"/>
+		<TableElement Code="ESP" Codesys="ISO3166_1" DisplayName="SPAIN" Source="SDO"/>
+		<TableElement Code="LKA" Codesys="ISO3166_1" DisplayName="SRI LANKA" Source="SDO"/>
+		<TableElement Code="SDN" Codesys="ISO3166_1" DisplayName="SUDAN" Source="SDO"/>
+		<TableElement Code="SUR" Codesys="ISO3166_1" DisplayName="SURINAME" Source="SDO"/>
+		<TableElement Code="SJM" Codesys="ISO3166_1" DisplayName="SVALBARD AND JAN MAYEN" Source="SDO"/>
+		<TableElement Code="SWZ" Codesys="ISO3166_1" DisplayName="SWAZILAND" Source="SDO"/>
+		<TableElement Code="SWE" Codesys="ISO3166_1" DisplayName="SWEDEN" Source="SDO"/>
+		<TableElement Code="CHE" Codesys="ISO3166_1" DisplayName="SWITZERLAND" Source="SDO"/>
+		<TableElement Code="SYR" Codesys="ISO3166_1" DisplayName="SYRIAN ARAB REPUBLIC" Source="SDO"/>
+		<TableElement Code="TWN" Codesys="ISO3166_1" DisplayName="TAIWAN, PROVINCE OF CHINA" Source="SDO"/>
+		<TableElement Code="TJK" Codesys="ISO3166_1" DisplayName="TAJIKISTAN" Source="SDO"/>
+		<TableElement Code="TZA" Codesys="ISO3166_1" DisplayName="TANZANIA, UNITED REPUBLIC OF" Source="SDO"/>
+		<TableElement Code="THA" Codesys="ISO3166_1" DisplayName="THAILAND" Source="SDO"/>
+		<TableElement Code="TLS" Codesys="ISO3166_1" DisplayName="TIMOR-LESTE" Source="SDO"/>
+		<TableElement Code="TGO" Codesys="ISO3166_1" DisplayName="TOGO" Source="SDO"/>
+		<TableElement Code="TKL" Codesys="ISO3166_1" DisplayName="TOKELAU" Source="SDO"/>
+		<TableElement Code="TON" Codesys="ISO3166_1" DisplayName="TONGA" Source="SDO"/>
+		<TableElement Code="TTO" Codesys="ISO3166_1" DisplayName="TRINIDAD AND TOBAGO" Source="SDO"/>
+		<TableElement Code="TUN" Codesys="ISO3166_1" DisplayName="TUNISIA" Source="SDO"/>
+		<TableElement Code="TUR" Codesys="ISO3166_1" DisplayName="TURKEY" Source="SDO"/>
+		<TableElement Code="TKM" Codesys="ISO3166_1" DisplayName="TURKMENISTAN" Source="SDO"/>
+		<TableElement Code="TCA" Codesys="ISO3166_1" DisplayName="TURKS AND CAICOS ISLANDS" Source="SDO"/>
+		<TableElement Code="TUV" Codesys="ISO3166_1" DisplayName="TUVALU" Source="SDO"/>
+		<TableElement Code="UGA" Codesys="ISO3166_1" DisplayName="UGANDA" Source="SDO"/>
+		<TableElement Code="UKR" Codesys="ISO3166_1" DisplayName="UKRAINE" Source="SDO"/>
+		<TableElement Code="ARE" Codesys="ISO3166_1" DisplayName="UNITED ARAB EMIRATES" Source="SDO"/>
+		<TableElement Code="GBR" Codesys="ISO3166_1" DisplayName="UNITED KINGDOM" Source="SDO"/>
+		<TableElement Code="USA" Codesys="ISO3166_1" DisplayName="UNITED STATES" Source="SDO"/>
+		<TableElement Code="UMI" Codesys="ISO3166_1" DisplayName="UNITED STATES MINOR OUTLYING ISLANDS" Source="SDO"/>
+		<TableElement Code="URY" Codesys="ISO3166_1" DisplayName="URUGUAY" Source="SDO"/>
+		<TableElement Code="UZB" Codesys="ISO3166_1" DisplayName="UZBEKISTAN" Source="SDO"/>
+		<TableElement Code="VUT" Codesys="ISO3166_1" DisplayName="VANUATU" Source="SDO"/>
+		<TableElement Code="VEN" Codesys="ISO3166_1" DisplayName="VENEZUELA" Source="SDO"/>
+		<TableElement Code="VNM" Codesys="ISO3166_1" DisplayName="VIET NAM" Source="SDO"/>
+		<TableElement Code="VGB" Codesys="ISO3166_1" DisplayName="VIRGIN ISLANDS, BRITISH" Source="SDO"/>
+		<TableElement Code="VIR" Codesys="ISO3166_1" DisplayName="VIRGIN ISLANDS, U.S." Source="SDO"/>
+		<TableElement Code="WLF" Codesys="ISO3166_1" DisplayName="WALLIS AND FUTUNA" Source="SDO"/>
+		<TableElement Code="ESH" Codesys="ISO3166_1" DisplayName="WESTERN SAHARA" Source="SDO"/>
+		<TableElement Code="YEM" Codesys="ISO3166_1" DisplayName="YEMEN" Source="SDO"/>
+		<TableElement Code="ZMB" Codesys="ISO3166_1" DisplayName="ZAMBIA" Source="SDO"/>
+		<TableElement Code="ZWE" Codesys="ISO3166_1" DisplayName="ZIMBABWE" Source="SDO"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70488" Name="Specimen Collection Method" Codesys="HL70488" Version="2.5.1" Type="HL7">
+		<TableElement Code="FNA" Codesys="HL70488" DisplayName="Aspiration, Fine Needle" Source="HL7"/>
+		<TableElement Code="PNA" Codesys="HL70488" DisplayName="Aterial puncture" Source="HL7"/>
+		<TableElement Code="BIO" Codesys="HL70488" DisplayName="Biopsy" Source="HL7"/>
+		<TableElement Code="BCAE" Codesys="HL70488" DisplayName="Blood Culture, Aerobic Bottle" Source="HL7"/>
+		<TableElement Code="BCAN" Codesys="HL70488" DisplayName="Blood Culture, Anaerobic Bottle" Source="HL7"/>
+		<TableElement Code="BCPD" Codesys="HL70488" DisplayName="Blood Culture, Pediatric Bottle" Source="HL7"/>
+		<TableElement Code="CAP" Codesys="HL70488" DisplayName="Capillary Specimen" Source="HL7"/>
+		<TableElement Code="CATH" Codesys="HL70488" DisplayName="Catheterized" Source="HL7"/>
+		<TableElement Code="EPLA" Codesys="HL70488" DisplayName="Environmental, Plate" Source="HL7"/>
+		<TableElement Code="ESWA" Codesys="HL70488" DisplayName="Environmental, Swab" Source="HL7"/>
+		<TableElement Code="LNA" Codesys="HL70488" DisplayName="Line, Arterial" Source="HL7"/>
+		<TableElement Code="CVP" Codesys="HL70488" DisplayName="Line, CVP" Source="HL7"/>
+		<TableElement Code="LNV" Codesys="HL70488" DisplayName="Line, Venous" Source="HL7"/>
+		<TableElement Code="MARTL" Codesys="HL70488" DisplayName="Martin-Lewis Agar" Source="HL7"/>
+		<TableElement Code="ML11" Codesys="HL70488" DisplayName="Mod. Martin-Lewis Agar" Source="HL7"/>
+		<TableElement Code="PACE" Codesys="HL70488" DisplayName="Pace, Gen-Probe" Source="HL7"/>
+		<TableElement Code="PIN" Codesys="HL70488" DisplayName="Pinworm Prep" Source="HL7"/>
+		<TableElement Code="KOFFP" Codesys="HL70488" DisplayName="Plate, Cough" Source="HL7"/>
+		<TableElement Code="MLP" Codesys="HL70488" DisplayName="Plate, Martin-Lewis" Source="HL7"/>
+		<TableElement Code="NYP" Codesys="HL70488" DisplayName="Plate, New York City" Source="HL7"/>
+		<TableElement Code="TMP" Codesys="HL70488" DisplayName="Plate, Thayer-Martin" Source="HL7"/>
+		<TableElement Code="ANP" Codesys="HL70488" DisplayName="Plates, Anaerobic" Source="HL7"/>
+		<TableElement Code="BAP" Codesys="HL70488" DisplayName="Plates, Blood Agar" Source="HL7"/>
+		<TableElement Code="PRIME" Codesys="HL70488" DisplayName="Pump Prime" Source="HL7"/>
+		<TableElement Code="PUMP" Codesys="HL70488" DisplayName="Pump Specimen" Source="HL7"/>
+		<TableElement Code="QC5" Codesys="HL70488" DisplayName="Quality Control For Micro" Source="HL7"/>
+		<TableElement Code="SCLP" Codesys="HL70488" DisplayName="Scalp, Fetal Vein" Source="HL7"/>
+		<TableElement Code="SCRAPS" Codesys="HL70488" DisplayName="Scrapings" Source="HL7"/>
+		<TableElement Code="SHA" Codesys="HL70488" DisplayName="Shaving" Source="HL7"/>
+		<TableElement Code="SWA" Codesys="HL70488" DisplayName="Swab" Source="HL7"/>
+		<TableElement Code="SWD" Codesys="HL70488" DisplayName="Swab, Dacron tipped" Source="HL7"/>
+		<TableElement Code="WOOD" Codesys="HL70488" DisplayName="Swab, Wooden Shaft" Source="HL7"/>
+		<TableElement Code="TMOT" Codesys="HL70488" DisplayName="Transport Media," Source="HL7"/>
+		<TableElement Code="TMAN" Codesys="HL70488" DisplayName="Transport Media, Anaerobic" Source="HL7"/>
+		<TableElement Code="TMCH" Codesys="HL70488" DisplayName="Transport Media, Chalamydia" Source="HL7"/>
+		<TableElement Code="TMM4" Codesys="HL70488" DisplayName="Transport Media, M4" Source="HL7"/>
+		<TableElement Code="TMMY" Codesys="HL70488" DisplayName="Transport Media, Mycoplasma" Source="HL7"/>
+		<TableElement Code="TMPV" Codesys="HL70488" DisplayName="Transport Media, PVA" Source="HL7"/>
+		<TableElement Code="TMSC" Codesys="HL70488" DisplayName="Transport Media, Stool Culture" Source="HL7"/>
+		<TableElement Code="TMUP" Codesys="HL70488" DisplayName="Transport Media, Ureaplasma" Source="HL7"/>
+		<TableElement Code="TMVI" Codesys="HL70488" DisplayName="Transport Media, Viral" Source="HL7"/>
+		<TableElement Code="VENIP" Codesys="HL70488" DisplayName="Venipuncture" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70516" Name="Error severity" Codesys="HL70516" Version="2.5.1" Type="HL7">
+		<TableElement Code="W" DisplayName="Warning" Source="HL7"/>
+		<TableElement Code="I" DisplayName="Information" Source="HL7"/>
+		<TableElement Code="E" DisplayName="Error" Source="HL7"/>
+	</TableDefinition>
+	<TableDefinition Id="HL70916" Name="Relevant Clinical Information" Codesys="HL70916" Version="2.5.1" Type="User"/>
+	<TableDefinition Id="HL70936" Name="Observation Type" Codesys="HL70936" Version="2.5.1" Type="User"/>
+	<!-- added for PH profile -->
+	<TableDefinition Id="HL70541" Name="Specimen Type Modifier" Codesys="HL7" Version="2.5.1" Type="User"/>
+	<TableDefinition Id="HL70542" Name="Specimen Source Type Modifier" Codesys="HL7" Version="2.5.1" Type="User"/>
+	<TableDefinition Id="HL70543" Name="Specimen Collection Site" Codesys="HL7" Version="2.5.1" Type="User"/>
+</TableLibrary>
