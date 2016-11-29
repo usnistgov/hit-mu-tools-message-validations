@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.healthcare.mu.lri-r2</groupId>
 	<artifactId>lri-r2-message-validation</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -36,7 +36,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</connection>
 		<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</developerConnection>
-	  <tag>lri-r2-message-validation-1.0.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 	<dependencies>
 		<dependency>
