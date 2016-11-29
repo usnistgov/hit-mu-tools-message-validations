@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.healthcare.mu.lri-r2</groupId>
 	<artifactId>lri-r2-message-validation</artifactId>
-	<version>0.0.6-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -36,7 +36,8 @@
 	<scm>
 		<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</connection>
 		<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</developerConnection>
-	</scm>
+	  <tag>lri-r2-message-validation-1.0.0</tag>
+  </scm>
 	<dependencies>
 		<dependency>
 			<groupId>joda-time</groupId>
