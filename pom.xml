@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.healthcare.mu.edos-r2</groupId>
 	<artifactId>eDOS-r2-message-validation</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	
 	<build>
 		<pluginManagement>
@@ -39,7 +39,8 @@
 		<!-- <developerConnection>scm:svn:https://svn.code.sf.net/p/mu-nist/code/trunk/eDOS-message-validation</developerConnection> -->
 			<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</connection>
 			<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</developerConnection>
-	</scm>
+	  <tag>eDOS-r2-message-validation-1.0.1</tag>
+  </scm>
 	<dependencies>
 		<dependency>
 			<groupId>joda-time</groupId>
