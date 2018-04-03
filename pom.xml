@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>gov.nist.healthcare.mu.loi-r1</groupId>
 	<artifactId>loi-message-validation</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -36,7 +36,7 @@
 	<scm>
 			<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</connection>
 			<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-message-validations.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>loi-message-validation-1.0.2</tag>
   </scm>
 	<dependencies>
 		<dependency>
